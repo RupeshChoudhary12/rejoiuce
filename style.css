@@ -1,0 +1,278 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'rejouice headline';
+}
+
+
+html , body {
+    height: 100%;
+    width: 100%;
+}
+
+
+#page1{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.cursor{
+    height: 7.5vw;
+    border-radius: 50%;
+    width: 7.5vw;
+    position: fixed;
+    z-index: 9;
+    background-color: #FF5F38;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50% ,-50%);
+}
+.cursor h5{
+    font-size: 1.1vw;
+
+}
+
+#page1 video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+
+.page1-content{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 5vw;
+}
+nav{
+    /* height: 100px; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 2vw;
+    justify-content: space-between;
+
+}
+nav h3 {
+    font-size: 1.4vw;
+    font-weight: 100;
+}
+
+nav h4 {
+    font-size: 1.4vw;
+    font-weight: 100;
+}
+
+.page1-content h1{
+    font-size: 26vw;
+    font-weight: 200;
+    line-height: 27vw;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.page1-content h1 span {
+    display: inline-block;
+
+
+}
+
+.page2{
+    height: 100vh;
+    width: 100%;
+}
+
+.page2 nav {
+    border-bottom: 2px solid gray;
+    padding: 3vw;
+}
+
+.page2 h2{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-weight: 100;
+}
+
+.page2 h2 {
+    font-size: 4vw;
+}
+
+.page3 {
+   min-height: 100vh;
+    width: 100%;
+    position: relative;
+    padding: 3vw;
+}
+
+.page3-top{
+    text-align: center;
+    padding: 5vw;
+
+}
+.page3-top h4 {
+    margin-bottom: 1vw;
+    font-size: 1vw;
+    font-weight: 500;
+
+}
+.page3-top h2 {
+    font-size: 4vw;
+    font-weight: 500;
+}
+
+.page3-top h4 span{
+    font-size: 0.7vw;
+    background-color: black;
+    color: #fff;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.page3-element {
+    height: 75vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+.page3-element .box {
+    height: 100%;
+    width: 32.5%;
+    border-radius: 10px;
+    position: relative;
+}
+
+.page3-element .box h1{
+    height: 10%;
+    width: 60%;
+    position:absolute;
+    color: seashell;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 100;
+    
+}
+.box h1{
+    margin-top: 90%;
+
+}
+
+
+.page3-element .box video {
+    height: 100%;
+    width: 100%;
+    object-position: center;
+    object-fit: cover;
+}
+
+.page3-element .box img {
+    position: absolute;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: all linear 0.8s;
+    width: 100%;
+
+}
+
+.page3-element .box:hover img {
+    opacity: 0;
+}
+
+.page4{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page4 video {
+    height: 100%;
+}
+
+.page4 svg{
+    position: absolute;
+    height: 70%;
+}
+
+.page5{
+    height: 100vh;
+    padding: 4vw 0;
+    width: 100%;
+    position: relative;
+}
+
+.page5 h1{
+    font-size: 9vw;
+    font-weight: 100;
+    border-bottom: 1px solid #2e2c2c;
+    width: 95%;
+    margin-left: 2%;
+
+}
+
+.swipperdiv{
+    height: 60vh;
+    width: 100%;
+    position: relative;
+    margin-top: -2%;
+
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    width: 400px !important;
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .loader{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: black;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    gap: 10px;
+  }
+
+  .loader h3 {
+    font-size: 2vw;
+  }
+
